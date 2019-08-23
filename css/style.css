@@ -71,7 +71,8 @@ hr {
 #header {
 	background: #76E5FF;
 	color:black;
-	height: 100%;
+	height: 100% !important;
+	padding-bottom: 20px;
 }
 
 #header .masthead-avatar {
@@ -293,12 +294,17 @@ footer p {
 /* Iphone/Android (Small Devices) ----------- */
 @media only screen and (min-width : 320px) and (max-width: 767px) {
 /* Styles */
-
+title {
+	display:none;
+	width: 0;
+	height: 0;
+	font-size: 0px;
+}
 .modal-body img {
 	margin-left: 10%; 
 }
 #header {
-	padding-top: 100px;
+	padding-top: 20px;
 }
 
 container {
@@ -371,7 +377,7 @@ container {
 	opacity: 1;
 }
 
-/*remove hover on iPad, keep same properties*/
+/*remove hover on iPhone, keep same properties*/
 #work .portfolio-item img:hover {
 	margin: 0 auto;
 	opacity: 1;
