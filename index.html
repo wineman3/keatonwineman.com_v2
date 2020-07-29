@@ -114,6 +114,21 @@
 
               <h3>Text-To-Speech</h3>
             </div>
+            <div class="portfolio-item">
+              <a
+                href="#podModal"
+                data-target="#podModal"
+                role="button"
+                data-toggle="modal"
+              >
+                <img
+                  class="img-responsive"
+                  src="img/projects/podgenie.png"
+                  alt="text-to-speech"
+              /></a>
+
+              <h3>PodGenie</h3>
+            </div>
           </div>
           <!-- row -->
           <!-- modal for text-to-speech -->
@@ -173,6 +188,59 @@
               </div>
             </div>
           </div>
+          <!-- modal for pod-genie -->
+          <div
+            class="modal fade"
+            id="podModal"
+            tabindex="-1"
+            role="dialog"
+            aria-labelledby="podModal"
+            aria-hidden="false"
+          >
+            <div class="modal-dialog modal-dialog-centered" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title title" id="exampleModalLongTitle">
+                    PodGenie
+                  </h5>
+                  <button
+                    type="button"
+                    class="close"
+                    data-dismiss="modal"
+                    aria-label="Close"
+                  >
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <img
+                    class="img-responsive"
+                    id="PodModalImage"
+                    src="img/projects/podgenie.png"
+                    alt="text-to-speech"
+                  />
+                  Allows user to generate a custom podcast based on category of
+                  their choosing. Audio generated using AWS Polly. Completely
+                  serverless architecture utilizing AWS Lambda/Python. Web
+                  landing page built using React. Mobile app coming soon.
+                </div>
+                <div class="modal-footer">
+                  <button
+                    type="button"
+                    class="btn btn-secondary"
+                    data-dismiss="modal"
+                  >
+                    Close
+                  </button>
+                  <a href="http://podgenie.io"
+                    ><button type="button" class="btn btn-primary">
+                      View the app
+                    </button></a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
         <!-- container -->
       </section>
@@ -184,6 +252,9 @@
 
           <div class="row">
             <div class="col-md-2 col-sm-4 col-xs-4">
+              <img src="img/skills/react.svg" title="React" />
+            </div>
+            <div class="col-md-2 col-sm-4 col-xs-4">
               <img title="Angular" class="img" src="img/skills/angular.svg" />
             </div>
             <div class="col-md-2 col-sm-4 col-xs-4">
@@ -191,9 +262,6 @@
             </div>
             <div class="col-md-2 col-sm-4 col-xs-4">
               <img src="img/skills/css-3.svg" title="CSS" />
-            </div>
-            <div class="col-md-2 col-sm-4 col-xs-4">
-              <img src="img/skills/bootstrap.svg" title="Bootstrap" />
             </div>
             <div class="col-md-2 col-sm-4 col-xs-4">
               <img src="img/skills/javascript.svg" title="Javascript" />
@@ -222,8 +290,9 @@
             <div class="col-md-2 col-sm-4 col-xs-4">
               <img src="img/skills/python.svg" title="Python" />
             </div>
+
             <div class="col-md-2 col-sm-4 col-xs-4">
-              <img src="img/skills/sass.svg" title="SASS" />
+              <img src="img/skills/bootstrap.svg" title="Bootstrap" />
             </div>
           </div>
           <!-- row 2-->
