@@ -6,7 +6,7 @@ name: Deploy
 on:
   # Triggers the workflow on push or pull request events but only for the master branch
   push:
-    branches: [ master ]
+    branches: [master]
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
@@ -25,7 +25,9 @@ jobs:
 
       # Runs a single command using the runners shell
       - name: Run a one-line script
-        run: echo Deploying Keatonwineman.com
+        run: echo ${{ secrets.AWS_ACCESS_KEY_ID }}
+      - name: Run a one-line script
+        run: echo ${{ secrets.AWS_SECRET_ACCESS_KEY  }}
 
       - name: Configure AWS Credentials Action For GitHub Actions
         # You may pin to the exact commit or the version.
