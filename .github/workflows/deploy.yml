@@ -25,9 +25,7 @@ jobs:
 
       # Runs a single command using the runners shell
       - name: Run a one-line script
-        run: echo ${{ secrets.AWS_ACCESS_KEY_ID }}
-      - name: Run a one-line script
-        run: echo ${{ secrets.AWS_SECRET_ACCESS_KEY  }}
+        run: echo Deploying Keatonwineman.com
 
       - name: Configure AWS Credentials Action For GitHub Actions
         # You may pin to the exact commit or the version.
